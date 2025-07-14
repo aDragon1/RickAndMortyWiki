@@ -14,6 +14,8 @@
     <string name="type_hint">Enter type</string>
 
     <string name="apply_filter_button_text">Apply filter</string>
+    <string name="retry">Retry</string>
+    <string name="empty_list_text">Whoops...Looks like nothing is here!</string>
 
     <string-array name="statuses">
         <item>alive</item>

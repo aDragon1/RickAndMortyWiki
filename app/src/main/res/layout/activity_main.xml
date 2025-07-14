@@ -1,41 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainFrameLayout"
+    android:id="@+id/mainSwipeRefreshLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.activities.MainActivity">
 
-    <EditText
-        android:id="@+id/characterNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawablePadding="8dp"
-        android:elevation="2dp"
-        android:gravity="start"
-        android:hint="@string/character_name_hint"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:padding="12dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/characterRecyclerView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        app:spanCount="2"
-        tools:itemCount="20"
-        tools:listitem="@layout/character_list_item" />
+        android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/filterImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:background="@android:color/transparent"
-        android:elevation="4dp"
-        android:src="@drawable/ic_filter" />
-</FrameLayout>
+        <EditText
+            android:id="@+id/characterNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:elevation="2dp"
+            android:gravity="start"
+            android:hint="@string/character_name_hint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/emptyListTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="@string/empty_list_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            app:spanCount="2"
+            tools:itemCount="20"
+            tools:listitem="@layout/character_list_item" />
+
+        <ImageButton
+            android:id="@+id/filterImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:elevation="4dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_filter" />
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
