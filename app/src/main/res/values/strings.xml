@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Rick And Morty wiki</string>
+
+    <string name="status_icon">Status Icon</string>
+    <string name="avatar_image">Avatar image</string>
+
+    <string name="character_name_hint">Character name..</string>
+    <string name="species_text">Species:</string>
+    <string name="type_text">Type:</string>
+    <string name="status_text">Status:</string>
+    <string name="gender_text">Gender:</string>
+
+    <string name="species_hint">Enter species</string>
+    <string name="type_hint">Enter type</string>
+
+    <string name="apply_filter_button_text">Apply filter</string>
+
+    <string-array name="statuses">
+        <item>alive</item>
+        <item>dead</item>
+        <item>unknown</item>
+    </string-array>
+    <string-array name="genders">
+        <item>female</item>
+        <item>male</item>
+        <item>genderless</item>
+        <item>unknown</item>
+    </string-array>
+
+</resources>

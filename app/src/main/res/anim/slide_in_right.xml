@@ -1,0 +1,7 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/decelerate_quad">
+    <translate
+        android:duration="@integer/filter_anim_duration"
+        android:fromXDelta="100%"
+        android:toXDelta="50%" />
+</set>

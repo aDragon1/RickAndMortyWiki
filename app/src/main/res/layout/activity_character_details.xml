@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/backImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_arrow_left" />
+
+        <ImageView
+            android:id="@+id/characterImageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/avatar_image"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:text="Rick Sanchez" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            tools:text="Alive · Male · Human" />
+
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            tools:text="Type: ??" />
+
+        <TextView
+            android:id="@+id/originTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            tools:text="Origin: Earth" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            tools:text="Location: Citadel of Ricks" />
+
+        <TextView
+            android:id="@+id/createdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            tools:text="Created: 2017-11-04" />
+
+        <TextView
+            android:id="@+id/episodesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Episodes count - 50" />
+
+        <ListView
+            android:id="@+id/episodesListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
